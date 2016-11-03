@@ -30,7 +30,7 @@ def readTxtAndComputeEntropy(fileName):
     P = 1 - H/Hmax
     print "H=%.2f\tHmax=%.2f\tRed.=%.1f%%" % (H, Hmax, 100*P)
 
-print "\nExample 4"
+print "\nExample 5"
 print "Parse the lyrics from 5 songs and compute the entropies (after removing stopwords)\n"
 
 readTxtAndComputeEntropy("data/lyrics/pinkfloyd_time"); print

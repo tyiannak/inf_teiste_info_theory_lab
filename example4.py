@@ -15,7 +15,7 @@ def computeImageEntropy(path):
     H = ITlib.computeEntropy(countValues)                           # compute entropy 
     return H, Grayscale                                             # return entropy and grayscale
 
-print "\nExample 3"
+print "\nExample 4"
 print "Compute the entropy of three gray-scale images\n"
 H1, I1 = computeImageEntropy("data" + os.sep + "dot.jpg")
 H2, I2 = computeImageEntropy("data" + os.sep + "seaGray.jpg")

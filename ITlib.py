@@ -37,3 +37,11 @@ def computePriorsFromJointP(jointP):
     else:
         raise ValueError("Probabilities must sum to unity!")        # raise an error if probabilities do not sum to 1
 
+def computeChannelCapacityAWGN(Badwidth, SNR):
+    return Badwidth * numpy.log2(1+SNR)
+
+def SNR_db_to_num(SNR_db):                                          # convert db to number
+    return 10 ** (SNR_db / 10.0)
+
+def SNR_num_to_db(SNR_num):                                         # convert number to db
+    return 10 * numpy.log10(SNR_num)
