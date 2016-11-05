@@ -1,7 +1,4 @@
-import ITlib
-import numpy
-import os
-import cv2
+import ITlib, numpy
 import matplotlib.pyplot as plt
 
 def computeChannelEntropies(jointProbMatrix):

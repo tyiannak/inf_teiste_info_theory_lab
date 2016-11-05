@@ -28,5 +28,5 @@ for nS in nSymbols:
 
 plt.plot(numpy.log10(nSymbols), Hs); 
 plt.plot(numpy.log10(numpy.array([nSymbols[0],nSymbols[-1]])), [realEntropy, realEntropy],"--")
-plt.xlabel("log(nsymbols)"); plt.show()
+plt.xlabel("log(nsymbols)"); plt.ylabel("Entropy"); plt.show()
 
