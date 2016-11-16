@@ -23,12 +23,15 @@ def encode(countsChar):
     return hufDict
 
 def getCounts(text): 
+    # get counts of each character of a given text (message)
     counts = defaultdict(int)
     for ch in text:
         counts[ch] += 1
     return counts
 
 def string2huff(text):
+    # converts a text to a list of huffman codewords 
+    # also returns probabilities of each characters
     counts = getCounts(txt)
     huffDict = encode(counts)
     S = 0
@@ -45,6 +48,7 @@ def string2huff(text):
     return huffs, Probs
 
 def string2ascii(text):
+    # converts a text to a list of ascii codes in binary format (per character)
     ascii = [] 
     for t in text:   
         bint = bin(ord(t))[2:]
@@ -52,27 +56,24 @@ def string2ascii(text):
         ascii.append(bint)
     return ascii
 
-
-#txt = "Aw man I shot Marvin in the face".lower()
-txt = "aaaaaaaaa b"
+txt = "Aw man I shot Marvin in the face".lower()
+#txt = "aaaaaaaaa b"
 #txt = [1,2,2,2,2,2,2,3]
 
-
-
 asciiList = string2ascii(txt)
-print asciiList
 huffManList, Probs = string2huff(txt)
-print huffManList
 
-nAscii = 0
-for a in asciiList:
-    nAscii += len(a)
-nHuff = 0
-for h in huffManList:
-    nHuff += (len(h) + 1)
+print "-".join(asciiList)
 
-print nAscii, nHuff, float(nAscii) / nHuff
-print Probs
-H = ITlib.computeEntropy(numpy.array(Probs))
-Hmax = ITlib.computeMaxEntropy(len(Probs))
-print 1 - H/Hmax
+nAscii = asciiList
+#for a in asciiList:
+#    nAscii += len(a)
+#nHuff = 0
+#for h in huffManList:
+#    nHuff += (len(h) + 1)
+
+#print nAscii, nHuff, float(nAscii) / nHuff
+#print Probs
+#H = ITlib.computeEntropy(numpy.array(Probs))
+#Hmax = ITlib.computeMaxEntropy(len(Probs))
+#print 1 - H/Hmax
