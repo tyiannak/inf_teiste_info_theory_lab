@@ -51,7 +51,7 @@ def SNR_num_to_db(SNR_num):                                         # convert nu
 '''''''''''''''
     CODING
 ''''''''''''''' 
-def generateHuuffmanCode(countsChar):
+def generateHuffmanCode(countsChar):
     """Huffman encode the given dict mapping symbols to weights"""
     heap = [[wt, [sym, ""]] for sym, wt in countsChar.items()]
     heapify(heap)
@@ -67,5 +67,9 @@ def generateHuuffmanCode(countsChar):
     hufDict = {}
     for p in huf:
         hufDict[p[0]] = p[1]
-    return hufDict
+    P = numpy.array(countsChar.values()).astype(float)
+    P /= P.sum()
+    l = numpy.array([len(code) for code in hufDict.values()])
+    averageLength = (P * l).sum()
+    return hufDict, averageLength
     
