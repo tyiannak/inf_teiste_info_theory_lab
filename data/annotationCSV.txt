@@ -1,0 +1,605 @@
+Tap	0.406	5.675	water taping	wav1.eaf
+Door	7.006	8.006	Door close	wav1.eaf
+Door	10.892	11.423	Door close	wav1.eaf
+Door	11.526	12.595	Door open	wav1.eaf
+Door	14.253	15.019	Door close	wav1.eaf
+Door	15.122	16.757	Door open	wav1.eaf
+Silence	8.247	10.785	silence	wav1.eaf
+Silence	12.629	13.995	silence	wav1.eaf
+Silence	25.606	27.151	silence	wav1.eaf
+Silence	34.823	36.485	silence	wav1.eaf
+Silence	37.826	39.095	silence	wav1.eaf
+Silence	49.992	51.199	silence	wav1.eaf
+Silence	52.158	54.379	silence	wav1.eaf
+Silence	55.354	57.781	silence	wav1.eaf
+draws	16.936	18.646	draws open	wav1.eaf
+draws	18.836	20.105	draws close	wav1.eaf
+draws	20.149	21.349	draws open	wav1.eaf
+draws	21.47	22.821	draws close	wav1.eaf
+draws	23.066	24.3	draws open	wav1.eaf
+draws	24.362	25.507	draws close	wav1.eaf
+flushing	27.192	33.019	flushing	wav1.eaf
+cupboards	33.123	34.779	close	wav1.eaf
+cupboards	36.506	37.761	close	wav1.eaf
+cupboards	39.132	39.884	close	wav1.eaf
+cupboards	39.898	40.229	close	wav1.eaf
+television	41.323	49.811	tv playing	wav1.eaf
+windows	51.575	52.009	close	wav1.eaf
+windows	54.544	55.165	close	wav1.eaf
+windows	57.888	58.543	close	wav1.eaf
+coughing	61.82	63.51	cough	wav1.eaf
+coughing	64.255	65.965	cough	wav1.eaf
+speach	67.537	76.502	speach	wav1.eaf
+music	78.261	86.662	music playing	wav1.eaf
+walk	87.357	96.43	walking	wav1.eaf
+clap	97.661	103.192	claping	wav1.eaf
+laughing	103.827	110.655	laughing	wav1.eaf
+Tap	0.69	8.07	tap	wav2.eaf
+Door	8.89	10.74	door close	wav2.eaf
+Door	11.02	12.55	door open	wav2.eaf
+Door	12.7	13.9	door close	wav2.eaf
+Door	13.985	14.835	door open	wav2.eaf
+Door	15.335	17.405	door close	wav2.eaf
+Silence	35.79	36.87	silence	wav2.eaf
+Silence	84.06	86.49	silence	wav2.eaf
+draws	18.035	20.485	open	wav2.eaf
+draws	20.575	21.685	close	wav2.eaf
+draws	21.835	23.635	draws open	wav2.eaf
+draws	23.7	24.15	close	wav2.eaf
+draws	24.81	25.59	close	wav2.eaf
+draws	25.735	26.725	close	wav2.eaf
+flushing	27.79	35.7	flushing	wav2.eaf
+cupboards	36.955	37.785	cupboard	wav2.eaf
+cupboards	38.965	39.785	cupboard	wav2.eaf
+cupboards	40.96	42.22	cupboard	wav2.eaf
+cupboards	42.935	44.005	cupboard	wav2.eaf
+television	44.32	54.09	tv playing	wav2.eaf
+windows	55.18	56.25	close	wav2.eaf
+windows	57.91	58.79	close	wav2.eaf
+windows	60.325	61.305	close	wav2.eaf
+coughing	63.66	65.74	cough	wav2.eaf
+coughing	65.95	67.6	cough	wav2.eaf
+speach	68.39	80.38	speach	wav2.eaf
+music	86.86	97.34	music playing	wav2.eaf
+walk	98.29	106.11	walking	wav2.eaf
+clap	106.22	112.04	claping	wav2.eaf
+laughing	112.45	118.545	laughs	wav2.eaf
+Tap	0.35	4.54	tap	wav3.eaf
+Door	4.75	5.58	close	wav3.eaf
+Door	7.625	8.295	close	wav3.eaf
+Silence	5.72	7.5	silence	wav3.eaf
+Silence	8.605	11.795	silence	wav3.eaf
+Silence	12.775	14.755	silence	wav3.eaf
+Silence	23.44	26.14	silence	wav3.eaf
+draws	12.01	12.56	close	wav3.eaf
+draws	14.93	15.38	close	wav3.eaf
+flushing	18.03	23.03	flushing	wav3.eaf
+cupboards	26.265	27.175	close	wav3.eaf
+cupboards	28.795	29.645	close	wav3.eaf
+television	33.305	38.965	tv playing	wav3.eaf
+windows	40.11	40.94	close	wav3.eaf
+windows	42.54	43.26	close	wav3.eaf
+coughing	45.785	47.195	cough	wav3.eaf
+coughing	47.405	48.525	cough	wav3.eaf
+coughing	48.78	49.94	cough	wav3.eaf
+speach	50.55	61.77	speach	wav3.eaf
+music	62.75	75.75	music playing	wav3.eaf
+walk	76.02	82.46	walking	wav3.eaf
+clap	83.41	88.22	claping	wav3.eaf
+laughing	88.34	89.99	laugh	wav3.eaf
+laughing	90.02	91.75	laugh	wav3.eaf
+laughing	91.8	93.2	laugh	wav3.eaf
+laughing	93.225	97.565	laugh	wav3.eaf
+Tap	0.66	4.03	water running	wav4.eaf
+Door	4.31	5.6	close	wav4.eaf
+Door	7.344	8.311	close	wav4.eaf
+Silence	5.85	7.2	silence	wav4.eaf
+Silence	8.524	10.213	silence	wav4.eaf
+draws	10.278	11.426	close	wav4.eaf
+draws	11.516	12.811	open	wav4.eaf
+draws	12.892	13.876	close	wav4.eaf
+flushing	15.539	19.441	flushing	wav4.eaf
+cupboards	21.809	22.973	close	wav4.eaf
+cupboards	24.219	25.612	close	wav4.eaf
+television	26.366	31.152	tv playing	wav4.eaf
+windows	31.849	32.964	close	wav4.eaf
+windows	34.316	35.479	close	wav4.eaf
+coughing	36.282	39.807	cough	wav4.eaf
+speach	40.917	50.507	speaking	wav4.eaf
+music	54.683	63.552	music playing	wav4.eaf
+walk	63.781	72.409	walking	wav4.eaf
+clap	81.949	87.048	clapping	wav4.eaf
+laughing	73.393	81.802	laughing	wav4.eaf
+Tap	0.74	4.04	water running	wav5.eaf
+Door	4.72	5.63	close	wav5.eaf
+Door	7.255	8.085	close	wav5.eaf
+Silence	5.87	7.05	silence	wav5.eaf
+draws	10.035	11.175	open	wav5.eaf
+draws	11.22	11.84	close	wav5.eaf
+draws	12.375	13.415	open	wav5.eaf
+draws	13.55	14.35	clos	wav5.eaf
+flushing	15.825	19.565	flushing	wav5.eaf
+cupboards	20.26	20.9	close	wav5.eaf
+cupboards	22.745	23.895	close	wav5.eaf
+television	24.885	29.685	tv playing	wav5.eaf
+windows	30.74	31.71	close	wav5.eaf
+windows	33.28	34.26	 close	wav5.eaf
+coughing	36.015	37.935	cough	wav5.eaf
+coughing	37.98	39.29	cough	wav5.eaf
+coughing	39.34	40.1	cough	wav5.eaf
+speach	40.235	48.435	speaking	wav5.eaf
+music	48.93	56.81	music playing	wav5.eaf
+walk	57.25	64.05	walking	wav5.eaf
+clap	70.22	75.14	clapping	wav5.eaf
+laughing	64.1	70.09	laughing	wav5.eaf
+Tap	0.95	4.57	water running	wav6.eaf
+Door	4.79	5.74	close	wav6.eaf
+Door	7.6	8.52	close	wav6.eaf
+draws	10.695	11.525	close	wav6.eaf
+draws	11.885	13.165	open	wav6.eaf
+draws	13.25	13.8	close	wav6.eaf
+flushing	14.95	18.19	flushing	wav6.eaf
+cupboards	20.115	20.995	close	wav6.eaf
+cupboards	23.05	23.94	close	wav6.eaf
+television	24.98	30.99	tv playing	wav6.eaf
+windows	31.6	32.26	close	wav6.eaf
+windows	33.715	34.455	close	wav6.eaf
+coughing	36.74	38.28	cough	wav6.eaf
+coughing	38.435	39.545	cough	wav6.eaf
+coughing	39.805	40.865	cough	wav6.eaf
+speach	41.38	47.6	speaking	wav6.eaf
+music	49.06	56.03	music playing	wav6.eaf
+walk	56.57	62.32	walking	wav6.eaf
+clap	70.1	73.88	clapping	wav6.eaf
+laughing	62.85	69.73	laughing	wav6.eaf
+Tap	0.77	4.19	water running	wav7.eaf
+Door	4.87	5.85	close	wav7.eaf
+Door	7.37	8.11	close	wav7.eaf
+Silence	5.98	7.19	silence	wav7.eaf
+Silence	8.35	9.44	silence	wav7.eaf
+Silence	22.17	23.76	silence	wav7.eaf
+draws	9.695	10.605	close	wav7.eaf
+draws	10.955	12.995	open	wav7.eaf
+draws	13.39	14.13	close	wav7.eaf
+draws	14.755	15.805	clos	wav7.eaf
+flushing	16.525	19.075	flushing	wav7.eaf
+cupboards	21.195	21.935	close	wav7.eaf
+cupboards	23.79	24.59	close	wav7.eaf
+television	30.05	35.97	tv playing	wav7.eaf
+windows	26.485	27.255	close	wav7.eaf
+windows	28.945	29.825	close	wav7.eaf
+coughing	36.905	38.195	cough	wav7.eaf
+coughing	38.335	39.585	cough	wav7.eaf
+coughing	39.945	40.905	cough	wav7.eaf
+speach	41.08	46.91	speaking	wav7.eaf
+music	47.28	54.65	music playing	wav7.eaf
+walk	55.0	61.49	walking	wav7.eaf
+clap	69.78	73.62	clapping	wav7.eaf
+laughing	62.21	69.74	laughing	wav7.eaf
+Tap	1.23	4.09	water running	wav8.eaf
+Door	4.89	5.83	close	wav8.eaf
+Door	7.84	8.72	close	wav8.eaf
+draws	9.775	11.205	close	wav8.eaf
+draws	12.165	12.915	close	wav8.eaf
+draws	13.375	14.055	close	wav8.eaf
+flushing	17.07	19.8	flushing	wav8.eaf
+cupboards	21.95	23.13	close	wav8.eaf
+cupboards	24.265	25.205	close	wav8.eaf
+television	25.69	30.23	tv playing	wav8.eaf
+windows	31.065	31.945	close	wav8.eaf
+windows	34.13	34.79	close	wav8.eaf
+coughing	35.355	36.705	cough	wav8.eaf
+coughing	36.755	38.095	cough	wav8.eaf
+coughing	38.18	38.89	cough	wav8.eaf
+speach	39.16	46.54	speaking	wav8.eaf
+music	46.99	54.78	music playing	wav8.eaf
+walk	55.14	62.05	walking	wav8.eaf
+clap	69.68	73.82	clapping	wav8.eaf
+laughing	62.52	69.65	laughing	wav8.eaf
+Tap	0.73	3.31	water running	wav9.eaf
+Door	4.16	5.31	close	wav9.eaf
+Door	7.63	8.42	close	wav9.eaf
+draws	9.96	10.75	close	wav9.eaf
+draws	12.87	13.63	close	wav9.eaf
+flushing	16.46	18.83	flushing	wav9.eaf
+cupboards	21.11	21.85	close	wav9.eaf
+cupboards	23.525	24.365	close	wav9.eaf
+television	25.71	31.66	tv playing	wav9.eaf
+windows	32.59	33.15	close	wav9.eaf
+windows	34.695	35.295	close	wav9.eaf
+coughing	36.78	38.01	cough	wav9.eaf
+coughing	38.08	39.72	cough	wav9.eaf
+speach	40.375	48.255	speaking	wav9.eaf
+music	48.55	55.6	music playing	wav9.eaf
+walk	55.65	63.32	walking	wav9.eaf
+clap	70.09	75.45	clapping	wav9.eaf
+laughing	63.48	70.06	laughing	wav9.eaf
+Tap	1.19	4.49	water running	wav10.eaf
+Door	5.35	6.13	close	wav10.eaf
+Door	7.86	8.65	close	wav10.eaf
+draws	9.23	10.05	open	wav10.eaf
+draws	10.14	10.66	close	wav10.eaf
+draws	11.345	11.925	close	wav10.eaf
+draws	14.475	15.155	close	wav10.eaf
+flushing	16.89	18.95	flushing	wav10.eaf
+cupboards	20.655	21.685	close	wav10.eaf
+cupboards	23.105	23.755	close	wav10.eaf
+television	23.905	28.225	tv playing	wav10.eaf
+windows	29.46	30.08	close	wav10.eaf
+windows	31.805	32.405	close	wav10.eaf
+coughing	33.46	34.69	cough	wav10.eaf
+coughing	34.74	35.81	cough	wav10.eaf
+speach	36.14	42.56	speaking	wav10.eaf
+music	42.985	50.045	music playing	wav10.eaf
+walk	50.18	53.19	walking	wav10.eaf
+walk	53.26	56.88	walking	wav10.eaf
+clap	62.7	67.28	clapping	wav10.eaf
+laughing	57.3	62.59	laughing	wav10.eaf
+Tap	0.48	2.98	water running	wav11.eaf
+Door	3.64	4.4	close	wav11.eaf
+Door	5.3	6.02	close	wav11.eaf
+draws	7.33	7.99	close	wav11.eaf
+draws	8.855	9.325	close	wav11.eaf
+draws	11.235	12.125	close	wav11.eaf
+flushing	13.225	16.395	flushing	wav11.eaf
+cupboards	18.2	18.75	close	wav11.eaf
+cupboards	20.08	20.86	close	wav11.eaf
+television	22.05	26.69	tv playing	wav11.eaf
+windows	27.75	28.55	close	wav11.eaf
+windows	29.955	30.525	close	wav11.eaf
+coughing	31.86	32.77	cough	wav11.eaf
+coughing	32.82	34.27	coughj	wav11.eaf
+speach	34.69	43.11	speaking	wav11.eaf
+music	44.27	52.35	music playing	wav11.eaf
+walk	52.89	58.62	walking	wav11.eaf
+clap	65.44	68.89	clapping	wav11.eaf
+laughing	59.07	65.38	laughing	wav11.eaf
+Tap	0.52	3.88	water running	wav12.eaf
+Door	4.15	4.89	close	wav12.eaf
+Door	6.06	6.8	close	wav12.eaf
+draws	8.54	9.39	close	wav12.eaf
+draws	11.15	11.81	close	wav12.eaf
+flushing	14.165	18.425	flushing	wav12.eaf
+cupboards	18.81	19.44	close	wav12.eaf
+cupboards	21.33	21.92	close	wav12.eaf
+television	22.75	26.87	tv playing	wav12.eaf
+windows	27.845	28.515	close	wav12.eaf
+windows	29.815	30.485	close	wav12.eaf
+coughing	32.275	33.725	cough	wav12.eaf
+coughing	33.785	34.845	cough	wav12.eaf
+speach	35.58	43.75	speaking	wav12.eaf
+music	44.9	50.94	music playing	wav12.eaf
+walk	51.43	58.55	walking	wav12.eaf
+clap	65.45	69.11	clapping	wav12.eaf
+laughing	58.97	65.23	laughing	wav12.eaf
+Tap	0.68	3.91	water running	wav13.eaf
+Door	4.89	5.63	close	wav13.eaf
+Door	6.72	7.42	close	wav13.eaf
+draws	9.665	10.305	close	wav13.eaf
+draws	11.77	12.35	close	wav13.eaf
+flushing	13.585	16.875	flushing	wav13.eaf
+cupboards	17.495	17.975	close	wav13.eaf
+cupboards	19.76	20.39	close	wav13.eaf
+television	23.34	28.31	tv playing	wav13.eaf
+windows	29.39	30.47	close	wav13.eaf
+windows	31.665	32.375	close	wav13.eaf
+coughing	33.565	34.835	cough	wav13.eaf
+coughing	34.94	36.56	cough	wav13.eaf
+speach	37.42	48.32	speaking	wav13.eaf
+music	49.36	57.44	music playing	wav13.eaf
+walk	57.9	64.53	walking	wav13.eaf
+clap	70.9	74.67	clapping	wav13.eaf
+laughing	64.97	70.82	laughing	wav13.eaf
+Tap	0.51	3.95	water running	wav14.eaf
+Door	4.79	5.56	close	wav14.eaf
+Door	6.81	7.56	close	wav14.eaf
+draws	7.82	8.76	close	wav14.eaf
+draws	9.415	10.455	close	wav14.eaf
+flushing	12.71	16.94	flushing	wav14.eaf
+cupboards	17.6	18.25	close	wav14.eaf
+cupboards	19.69	20.25	close	wav14.eaf
+cupboards	20.595	21.345	close	wav14.eaf
+television	21.885	24.695	tv playing	wav14.eaf
+windows	27.29	27.92	close	wav14.eaf
+windows	29.29	29.96	close	wav14.eaf
+coughing	30.85	32.07	cough	wav14.eaf
+coughing	32.185	33.335	cough	wav14.eaf
+speach	33.715	44.085	speaking	wav14.eaf
+music	45.96	53.87	music playing	wav14.eaf
+walk	54.22	61.34	walking	wav14.eaf
+clap	69.05	74.5	clapping	wav14.eaf
+laughing	61.86	68.84	laughing	wav14.eaf
+Tap	0.45	3.68	water running	wav15.eaf
+Door	4.03	4.88	close	wav15.eaf
+Door	5.76	6.54	close	wav15.eaf
+draws	8.605	9.145	close	wav15.eaf
+draws	10.81	11.52	close	wav15.eaf
+flushing	12.72	16.06	flushing	wav15.eaf
+cupboards	17.54	18.35	close	wav15.eaf
+cupboards	19.32	20.07	close	wav15.eaf
+cupboards	20.65	21.11	close	wav15.eaf
+television	21.7	28.29	tv playing	wav15.eaf
+windows	29.16	29.93	close	wav15.eaf
+windows	31.31	32.04	close	wav15.eaf
+coughing	33.19	34.32	cough	wav15.eaf
+coughing	34.46	35.72	cough	wav15.eaf
+speach	36.04	47.7	speaking	wav15.eaf
+music	47.76	57.33	music playing	wav15.eaf
+walk	57.67	64.3	walking	wav15.eaf
+clap	72.34	76.33	clapping	wav15.eaf
+laughing	64.93	72.31	laughing	wav15.eaf
+Tap	0.9	4.12	water running	wav16.eaf
+Door	4.93	5.75	close	wav16.eaf
+Door	6.95	7.73	close	wav16.eaf
+draws	8.835	9.765	close	wav16.eaf
+draws	10.735	11.585	close	wav16.eaf
+flushing	13.355	17.335	flushing	wav16.eaf
+cupboards	18.51	19.57	close	wav16.eaf
+cupboards	19.705	20.495	close	wav16.eaf
+cupboards	21.395	21.955	close	wav16.eaf
+television	23.02	28.55	tv playing	wav16.eaf
+windows	29.82	30.6	close	wav16.eaf
+windows	31.835	32.535	close	wav16.eaf
+coughing	33.8	35.08	cough	wav16.eaf
+coughing	35.395	36.825	cough	wav16.eaf
+speach	37.2	47.19	speaking	wav16.eaf
+music	47.93	57.94	music playing	wav16.eaf
+walk	58.13	64.18	walking	wav16.eaf
+clap	71.52	75.26	clapping	wav16.eaf
+laughing	64.38	71.49	laughing	wav16.eaf
+Tap	0.59	2.99	water running	wav17.eaf
+Door	3.31	4.13	close	wav17.eaf
+Door	5.03	5.89	close	wav17.eaf
+draws	7.67	8.57	close	wav17.eaf
+draws	9.475	10.105	close	wav17.eaf
+flushing	11.215	14.375	flushing	wav17.eaf
+cupboards	15.61	16.61	close	wav17.eaf
+cupboards	17.575	18.255	close	wav17.eaf
+television	18.61	24.92	tv playing	wav17.eaf
+windows	25.76	26.55	close	wav17.eaf
+windows	27.74	28.67	close	wav17.eaf
+coughing	28.85	30.07	cough	wav17.eaf
+coughing	30.115	31.335	cough	wav17.eaf
+speach	31.86	40.76	speaking	wav17.eaf
+music	40.85	48.84	music playing	wav17.eaf
+walk	49.03	55.65	walking	wav17.eaf
+clap	62.39	66.32	clapping	wav17.eaf
+laughing	55.83	62.36	laughing	wav17.eaf
+Tap	0.34	2.37	water running	wav18.eaf
+Door	3.11	3.85	close	wav18.eaf
+Door	5.05	5.78	close	wav18.eaf
+draws	7.43	8.63	close	wav18.eaf
+draws	9.125	9.875	close	wav18.eaf
+draws	9.915	10.365	close	wav18.eaf
+flushing	12.025	15.925	flushing	wav18.eaf
+cupboards	17.99	18.35	close	wav18.eaf
+cupboards	19.565	20.045	close	wav18.eaf
+television	21.68	26.42	tv playing	wav18.eaf
+windows	27.53	28.14	close	wav18.eaf
+windows	29.56	30.27	close	wav18.eaf
+coughing	31.38	33.86	cough	wav18.eaf
+speach	34.17	42.63	speaking	wav18.eaf
+music	43.33	51.21	music playing	wav18.eaf
+walk	51.44	56.82	walking	wav18.eaf
+clap	62.92	66.64	clapping	wav18.eaf
+laughing	56.93	62.9	laughing	wav18.eaf
+Tap	0.25	2.14	water running	wav19.eaf
+Door	2.52	3.29	close	wav19.eaf
+Door	4.18	4.97	close	wav19.eaf
+draws	5.51	6.03	close	wav19.eaf
+draws	6.5	7.5	close	wav19.eaf
+flushing	8.505	12.015	flushing	wav19.eaf
+cupboards	12.475	13.175	close	wav19.eaf
+cupboards	13.3	14.03	close	wav19.eaf
+television	15.89	20.11	tv playing	wav19.eaf
+windows	21.29	21.9	close	wav19.eaf
+windows	23.27	23.93	close	wav19.eaf
+coughing	24.515	25.655	cough	wav19.eaf
+coughing	25.68	26.9	cough	wav19.eaf
+coughing	27.075	27.815	cough	wav19.eaf
+speach	28.06	35.13	speaking	wav19.eaf
+music	35.33	43.54	music playing	wav19.eaf
+walk	43.81	49.32	walking	wav19.eaf
+clap	56.77	60.405	clapping	wav19.eaf
+laughing	49.53	56.65	laughing	wav19.eaf
+Tap	0.47	2.94	water running	wav20.eaf
+Door	3.61	4.32	close	wav20.eaf
+Door	5.37	6.29	close	wav20.eaf
+draws	7.23	7.85	close	wav20.eaf
+draws	8.865	9.415	close	wav20.eaf
+flushing	10.845	13.895	flushing	wav20.eaf
+cupboards	15.025	15.775	close	wav20.eaf
+cupboards	16.505	17.055	close	wav20.eaf
+television	17.43	21.24	tv playing	wav20.eaf
+windows	22.54	23.23	close	wav20.eaf
+windows	24.38	25.16	close	wav20.eaf
+coughing	26.105	27.295	cough	wav20.eaf
+coughing	27.355	28.605	cough	wav20.eaf
+coughing	28.635	29.105	cough	wav20.eaf
+speach	29.34	37.5	speaking	wav20.eaf
+music	37.52	44.0	music playing	wav20.eaf
+walk	44.24	50.33	walking	wav20.eaf
+clap	57.7	62.16	clapping	wav20.eaf
+laughing	50.37	57.63	laughing	wav20.eaf
+Tap	0.25	2.72	water running	wav21.eaf
+Door	3.17	3.85	close	wav21.eaf
+Door	5.26	5.92	close	wav21.eaf
+draws	6.38	7.24	close	wav21.eaf
+draws	10.335	10.865	close	wav21.eaf
+flushing	11.375	14.545	flushing	wav21.eaf
+cupboards	15.31	16.32	close	wav21.eaf
+cupboards	17.45	18.21	close	wav21.eaf
+television	18.325	24.425	tv playing	wav21.eaf
+windows	25.21	25.93	close	wav21.eaf
+windows	27.35	28.17	close	wav21.eaf
+coughing	29.275	30.445	cough	wav21.eaf
+coughing	30.625	32.455	cough	wav21.eaf
+speach	32.59	40.08	speaking	wav21.eaf
+music	40.26	47.69	music playing	wav21.eaf
+walk	48.19	54.36	walking	wav21.eaf
+clap	61.54	66.015	clapping	wav21.eaf
+laughing	54.86	61.22	laughing	wav21.eaf
+Tap	0.31	2.71	water running	wav22.eaf
+Door	3.51	4.38	close	wav22.eaf
+Door	5.57	6.36	close	wav22.eaf
+draws	7.4	8.22	close	wav22.eaf
+draws	9.015	9.875	close	wav22.eaf
+flushing	10.74	13.38	flushing	wav22.eaf
+cupboards	16.88	17.5	close	wav22.eaf
+television	18.89	24.1	tv playing	wav22.eaf
+windows	25.36	26.06	close	wav22.eaf
+windows	27.445	28.285	close	wav22.eaf
+coughing	29.83	30.89	cough	wav22.eaf
+coughing	31.18	33.0	cough	wav22.eaf
+speach	33.47	40.37	speaking	wav22.eaf
+music	41.19	48.47	music playing	wav22.eaf
+walk	48.87	54.99	walking	wav22.eaf
+clap	61.63	65.17	clapping	wav22.eaf
+laughing	55.13	61.32	laughing	wav22.eaf
+Tap	0.44	2.65	water running	wav23.eaf
+Door	3.48	4.4	close	wav23.eaf
+Door	5.65	6.65	close	wav23.eaf
+draws	7.965	8.495	close	wav23.eaf
+draws	10.525	11.315	close	wav23.eaf
+flushing	12.645	16.385	flushing	wav23.eaf
+cupboards	18.54	19.24	close	wav23.eaf
+cupboards	20.655	21.425	close	wav23.eaf
+television	22.06	28.52	tv playing	wav23.eaf
+windows	29.51	30.19	close	wav23.eaf
+windows	31.535	32.355	close	wav23.eaf
+coughing	33.01	33.69	cough	wav23.eaf
+coughing	33.915	35.335	cough	wav23.eaf
+speach	36.19	42.73	speaking	wav23.eaf
+music	42.8	49.72	music playing	wav23.eaf
+walk	49.95	56.85	walking	wav23.eaf
+clap	64.18	68.12	clapping	wav23.eaf
+laughing	57.2	64.03	laughing	wav23.eaf
+Tap	0.0	1.6	water running	wav24.eaf
+Door	2.32	3.1	close	wav24.eaf
+Door	4.38	5.14	close	wav24.eaf
+draws	5.85	6.5	close	wav24.eaf
+draws	9.15	9.71	close	wav24.eaf
+flushing	10.905	14.195	flushing	wav24.eaf
+cupboards	16.61	17.37	close	wav24.eaf
+cupboards	18.71	19.58	close	wav24.eaf
+television	19.83	25.18	tv playing	wav24.eaf
+windows	26.49	27.13	close	wav24.eaf
+windows	28.935	29.525	close	wav24.eaf
+coughing	30.585	31.735	cough	wav24.eaf
+coughing	31.865	33.265	cough	wav24.eaf
+coughing	33.41	34.41	cough	wav24.eaf
+speach	35.0	42.18	speaking	wav24.eaf
+music	42.25	49.23	music playing	wav24.eaf
+walk	49.91	57.15	walking	wav24.eaf
+clap	63.4	67.34	clapping	wav24.eaf
+laughing	57.44	63.2	laughing	wav24.eaf
+Tap	1.23	3.65	water running	wav25.eaf
+Door	4.89	5.75	close	wav25.eaf
+Door	6.98	7.83	close	wav25.eaf
+draws	9.47	10.12	close	wav25.eaf
+draws	11.41	12.29	close	wav25.eaf
+flushing	13.805	16.775	flushing	wav25.eaf
+cupboards	19.01	19.81	close	wav25.eaf
+cupboards	20.735	21.785	close	wav25.eaf
+television	22.4	28.0	tv playing	wav25.eaf
+windows	29.37	30.07	close	wav25.eaf
+windows	31.445	32.055	close	wav25.eaf
+coughing	32.295	33.065	cough	wav25.eaf
+coughing	33.085	34.405	cough	wav25.eaf
+speach	35.21	43.97	speaking	wav25.eaf
+music	44.19	54.61	music playing	wav25.eaf
+walk	54.8	60.59	walking	wav25.eaf
+clap	67.39	71.4	clapping	wav25.eaf
+laughing	60.76	67.31	laughing	wav25.eaf
+Tap	0.52	2.92	water running	wav26.eaf
+Door	3.61	4.3	close	wav26.eaf
+Door	5.61	6.32	close	wav26.eaf
+draws	6.95	7.69	close	wav26.eaf
+draws	8.755	9.485	close	wav26.eaf
+flushing	10.275	13.105	flushing	wav26.eaf
+cupboards	15.52	16.27	close	wav26.eaf
+cupboards	17.08	18.08	close	wav26.eaf
+television	18.77	24.65	tv playing	wav26.eaf
+windows	25.56	26.17	close	wav26.eaf
+windows	27.43	28.23	close	wav26.eaf
+coughing	29.685	30.815	cough	wav26.eaf
+coughing	30.985	32.885	cough	wav26.eaf
+speach	33.24	39.82	speaking	wav26.eaf
+music	40.75	47.67	music playing	wav26.eaf
+walk	47.92	53.19	walking	wav26.eaf
+clap	60.52	63.97	clapping	wav26.eaf
+laughing	53.43	60.43	laughing	wav26.eaf
+Tap	2.38	4.51	water running	wav27.eaf
+Door	5.3	6.14	close	wav27.eaf
+Door	7.67	8.37	close	wav27.eaf
+draws	8.965	9.835	close	wav27.eaf
+draws	10.145	10.845	close	wav27.eaf
+flushing	12.83	16.32	flushing	wav27.eaf
+cupboards	18.63	19.65	close	wav27.eaf
+cupboards	20.78	21.61	close	wav27.eaf
+cupboards	21.69	22.3	close	wav27.eaf
+television	22.64	31.76	tv playing	wav27.eaf
+windows	32.63	33.45	close	wav27.eaf
+windows	34.775	35.645	close	wav27.eaf
+coughing	37.045	38.225	cough	wav27.eaf
+coughing	38.38	40.57	cough	wav27.eaf
+speach	40.84	47.44	speaking	wav27.eaf
+music	47.435	55.235	music playing	wav27.eaf
+walk	55.48	61.3	walking	wav27.eaf
+clap	66.58	70.81	clapping	wav27.eaf
+laughing	61.42	66.52	laughing	wav27.eaf
+Door	5.28	6.33	close	wav28.eaf
+Door	7.19	8.18	close	wav28.eaf
+draws	8.77	9.72	close	wav28.eaf
+draws	10.16	11.19	close	wav28.eaf
+flushing	13.2	16.54	flushing	wav28.eaf
+cupboards	18.95	19.98	close	wav28.eaf
+cupboards	20.86	21.69	close	wav28.eaf
+television	22.1	27.64	tv playing	wav28.eaf
+windows	28.81	29.61	close	wav28.eaf
+windows	30.955	31.675	close	wav28.eaf
+coughing	33.41	34.65	coughj	wav28.eaf
+coughing	34.675	37.215	cough	wav28.eaf
+speach	47.66	56.46	speaking	wav28.eaf
+music	37.79	47.53	music playing	wav28.eaf
+walk	63.05	67.64	walking	wav28.eaf
+clap	67.93	71.58	clapping	wav28.eaf
+laughing	56.49	62.82	laughing	wav28.eaf
+Tap	0.93	2.71	water running	wav29.eaf
+Door	3.56	4.33	close	wav29.eaf
+Door	5.63	6.35	close	wav29.eaf
+draws	6.86	8.36	close	wav29.eaf
+draws	8.525	9.445	close	wav29.eaf
+flushing	13.0	15.49	flushing	wav29.eaf
+cupboards	17.64	18.47	close	wav29.eaf
+cupboards	19.11	19.68	close	wav29.eaf
+cupboards	19.72	20.38	close	wav29.eaf
+television	21.035	24.845	tv playing	wav29.eaf
+windows	26.49	27.1	close	wav29.eaf
+windows	28.55	29.19	close	wav29.eaf
+coughing	30.66	32.0	cough	wav29.eaf
+coughing	32.035	34.395	cough	wav29.eaf
+speach	34.44	41.37	speaking	wav29.eaf
+music	41.52	49.47	music playing	wav29.eaf
+walk	49.73	55.4	walking	wav29.eaf
+clap	63.09	66.77	clapping	wav29.eaf
+laughing	55.74	62.95	laughing	wav29.eaf
+Tap	0.95	2.59	water running	wav30.eaf
+Door	4.45	5.36	close	wav30.eaf
+Door	6.61	7.62	close	wav30.eaf
+draws	8.05	9.0	close	wav30.eaf
+draws	10.39	11.22	close	wav30.eaf
+flushing	12.87	16.41	flushing	wav30.eaf
+cupboards	17.015	18.065	close	wav30.eaf
+cupboards	18.935	19.855	close	wav30.eaf
+television	20.35	24.57	tv playing	wav30.eaf
+windows	25.435	26.175	close	wav30.eaf
+windows	27.56	28.18	close	wav30.eaf
+coughing	28.725	31.195	cough	wav30.eaf
+coughing	31.555	33.205	cough	wav30.eaf
+speach	34.27	41.91	speaking	wav30.eaf
+music	43.62	49.49	music playing	wav30.eaf
+music	56.45	58.83	music playing	wav30.eaf
+walk	49.86	56.35	walking	wav30.eaf
+clap	69.51	73.3	clapping	wav30.eaf
+laughing	58.88	68.77	laughing	wav30.eaf
