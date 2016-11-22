@@ -17,6 +17,3 @@ print huffCode, length
 charCounts = {'a':5, 'b':4, 'c':15,'d':5,'e':6}
 huffCode, length = ITlib.generateHuffmanCode(charCounts)
 print huffCode, length
-
-
-#print ITlib.huffman2([30, 30, 13, 12, 10, 5])

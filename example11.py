@@ -4,7 +4,6 @@ import sys
 import numpy
 
 def huffmanCodeFromFile(filePath):
-    print "Example 10: generate huffman code from a text stored in a file"
     f = open(filePath)
     text = f.read().lower()
     f.close()    
@@ -19,7 +18,9 @@ def huffmanCodeFromFile(filePath):
     P /= P.sum()
     print "Entropy: %.2f bits per sample" % (ITlib.computeEntropy(P))   # compute entropy of source
     return huffCode
+    
 if __name__ == '__main__':
+    print "Example 11: generate 3 huffman codes from a text stored in a file and encode a text using these three codes"
     code1 = huffmanCodeFromFile('data/americanCivilWarWiki.txt')
     code2 = huffmanCodeFromFile('data/pythonCode.txt')
     code3 = huffmanCodeFromFile('data/annotationCSV.txt')

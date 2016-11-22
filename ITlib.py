@@ -58,7 +58,10 @@ def SNR_num_to_db(SNR_num):                                         # convert nu
     CODING
 ''''''''''''''' 
 def generateHuffmanCode(countsChar):
-    """Huffman encode the given dict mapping symbols to weights"""
+    # Generate the Huffman code for the given dict mapping symbols to weights
+    # INPUT: countsChar: a dictionary of chars to counts
+    # RETURNS: huffman code and average code word length    
+
     for c in countsChar:
         if countsChar[c] == 0:
             countsChar[c] = 1
@@ -83,7 +86,9 @@ def generateHuffmanCode(countsChar):
     return hufDict, averageLength
     
 def getTextCounts(text): 
-    # get counts of each character of a given text (message)    
+    # Get counts of each character of a given string (message)    
+    # INPUT: text (string)
+    # RETURNS: a dictionary of chars->counts
     counts = dict.fromkeys(listOfAllCharacters, 0)
     for ch in text:
         if ch in counts:
@@ -91,7 +96,10 @@ def getTextCounts(text):
     return counts
 
 def printTextCounts(counts, huffmanCode = None):
-    # prints in sorted order the provided character counts:
+    # Prints in sorted order the provided character counts and huffman code words (if provided)
+    # ARGUMENTS:
+    #  - counts: dictionary of chars->counts
+    #  - huffmanCode: dictionary of chars->huffman code words    
     Sum = float(sum(counts.values()))
     sorted_counts = sorted(counts.items(), key=operator.itemgetter(1), reverse = True)
     print sorted_counts
@@ -109,14 +117,20 @@ def printTextCounts(counts, huffmanCode = None):
             print "%s\t%.2f%%\t%s" % (k, 100 * counts[key] / Sum, huffmanCode[key])
 
 def removeUnknownCharacters(str):
+    # removes special characters from string and returns new string
     strNew = []
     for s in str:
         if s in listOfAllCharacters:
             strNew.append(s)
-    return strNew
+    return ''.join(strNew)
 
 def encodeHuffman(huffmanCode, text):    
-    # encodes a text using huffman code (extracted from generateHuffmanCode() function)    
+    # Encodes a text using huffman code (extracted from generateHuffmanCode() function)    
+    # ARGUMENTS:
+    #  - huffmanCode: dictionary of chars->huffman code words    
+    #  - text: string to be encoded
+    # RETURNS:
+    #  - huffs: list of encoded words
     huffs = []
     for t in text:
         huffs.append(huffmanCode[t])
