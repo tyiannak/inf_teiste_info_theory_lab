@@ -25,9 +25,9 @@ if __name__ == '__main__':
     code2 = huffmanCodeFromFile('data/pythonCode.txt')
     code3 = huffmanCodeFromFile('data/annotationCSV.txt')
     text1 = "Aw, man, I shot Marvin in the face.".lower()
-    t11 = ITlib.encodeHuffman(code1, text1)
-    t12 = ITlib.encodeHuffman(code2, text1)
-    t13 = ITlib.encodeHuffman(code3, text1)
+    t11 = ITlib.encode(code1, text1)
+    t12 = ITlib.encode(code2, text1)
+    t13 = ITlib.encode(code3, text1)
     L11 = 0
     print "Testing text %s (%d characters)"%(text1, len(text1))
     for t in t11:
@@ -46,9 +46,9 @@ if __name__ == '__main__':
     print "Length: %d"%L13
     print 
     text2 = " for pair in lo[1:]:  pair[1] = '0'".lower()
-    t21 = ITlib.encodeHuffman(code1, text2)
-    t22 = ITlib.encodeHuffman(code2, text2)
-    t23 = ITlib.encodeHuffman(code3, text2)
+    t21 = ITlib.encode(code1, text2)
+    t22 = ITlib.encode(code2, text2)
+    t23 = ITlib.encode(code3, text2)
     L21 = 0
     print "Testing text %s (%d characters)"%(text2, len(text2))
     for t in t21:

@@ -124,14 +124,14 @@ def removeUnknownCharacters(str):
             strNew.append(s)
     return ''.join(strNew)
 
-def encodeHuffman(huffmanCode, text):    
-    # Encodes a text using huffman code (extracted from generateHuffmanCode() function)    
+def encode(code, text):    
+    # Encodes a text using a given code (extracted e.g. from generateHuffmanCode() function)    
     # ARGUMENTS:
-    #  - huffmanCode: dictionary of chars->huffman code words    
+    #  - code: dictionary of chars->code words    
     #  - text: string to be encoded
     # RETURNS:
-    #  - huffs: list of encoded words
-    huffs = []
+    #  - eW: list of encoded words
+    eW = []
     for t in text:
-        huffs.append(huffmanCode[t])
-    return huffs
+        eW.append(code[t])
+    return eW
