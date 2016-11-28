@@ -20,4 +20,3 @@ jP = numpy.array([[1.0/4, 1.0/16, 0],[1.0/4, 1.0/8, 0],[0.0, 1.0/16, 1.0/4.0]])
 print "Joint probability matrix is "
 print jP
 computeChannelEntropies(jP)
-
