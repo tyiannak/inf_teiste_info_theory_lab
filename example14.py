@@ -3,7 +3,7 @@ import string
 import sys
 import numpy
 
-def shannonFaroCodeFromFile(filePath):
+def shannonFanoCodeFromFile(filePath):
     print "Example 14: generate shannon-fano code from a text stored in a file"
     f = open(filePath)
     text = f.read().lower()
@@ -20,4 +20,4 @@ def shannonFaroCodeFromFile(filePath):
     print "Entropy: %.4f bits per sample" % (ITlib.computeEntropy(P))   # compute entropy of source
     return huffCode
 if __name__ == '__main__':
-    shannonFaroCodeFromFile(sys.argv[1])
+    shannonFanoCodeFromFile(sys.argv[1])

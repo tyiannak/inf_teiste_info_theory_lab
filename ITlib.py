@@ -144,7 +144,7 @@ def generateShannonFanoCode(countsChar):
     for c in countsChar:
         if countsChar[c] == 0:
             countsChar[c] = 1
-    sDict = shannonFaroTree2Dictionary(calucateShannonFaroTree(countsChar))
+    sDict = shannonFanoTree2Dictionary(calucateShannonFanoTree(countsChar))
     P = numpy.array(countsChar.values()).astype(float)
     P /= P.sum()
     l = numpy.array([len(code) for code in sDict.values()])
@@ -153,7 +153,7 @@ def generateShannonFanoCode(countsChar):
 
 def divideShannonFanoList(counts): 
     '''
-    Divides a list of (symbol, frequency) pairs according to the Shannon-Faro algorithm
+    Divides a list of (symbol, frequency) pairs according to the Shannon-Fano algorithm
     '''
     counts2 = counts.items()
     counts2 = sorted(counts2, key=lambda x: x[1], reverse = True)    
@@ -166,7 +166,7 @@ def divideShannonFanoList(counts):
     right = [l[0] for l in counts2[imin::]]       
     return left, right
 
-def shannonFaroTree2Dictionary(tree):
+def shannonFanoTree2Dictionary(tree):
     '''
     Transcode tree to python 
     '''    
@@ -174,7 +174,7 @@ def shannonFaroTree2Dictionary(tree):
     level = 1    
     if len(tree) == 2 and isinstance(tree,tuple):
         l, r = tree
-        cl, cr = shannonFaroTree2Dictionary(l), shannonFaroTree2Dictionary(r)        
+        cl, cr = shannonFanoTree2Dictionary(l), shannonFanoTree2Dictionary(r)        
         cout = dict()
         for k,v in cl.iteritems():
             cout[k] = '0'+v
@@ -184,7 +184,7 @@ def shannonFaroTree2Dictionary(tree):
     else:
         return {tree:''}
 
-def calucateShannonFaroTree(dc):
+def calucateShannonFanoTree(dc):
     '''
     turns a probability dictionary into an encoding tree using the given split algorithm (fast is default)
     '''
@@ -198,5 +198,5 @@ def calucateShannonFaroTree(dc):
             dl[x] = dc[x]
         for x in right:
             dr[x] = dc[x]
-        tree = (calucateShannonFaroTree(dl), calucateShannonFaroTree(dr))
+        tree = (calucateShannonFanoTree(dl), calucateShannonFanoTree(dr))
         return tree
