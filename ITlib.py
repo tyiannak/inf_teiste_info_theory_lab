@@ -135,3 +135,68 @@ def encode(code, text):
     for t in text:
         eW.append(code[t])
     return eW
+
+def generateShannonFanoCode(countsChar):
+    # Generate the Shanno-Fano code for the given dict mapping symbols to weights
+    # INPUT: countsChar: a dictionary of chars to counts
+    # RETURNS: ShannoFeno code and average code word length    
+
+    for c in countsChar:
+        if countsChar[c] == 0:
+            countsChar[c] = 1
+    sDict = shannonFaroTree2Dictionary(calucateShannonFaroTree(countsChar))
+    P = numpy.array(countsChar.values()).astype(float)
+    P /= P.sum()
+    l = numpy.array([len(code) for code in sDict.values()])
+    averageLength = (P * l).sum()
+    return sDict, averageLength
+
+def divideShannonFanoList(counts): 
+    '''
+    Divides a list of (symbol, frequency) pairs according to the Shannon-Faro algorithm
+    '''
+    counts2 = counts.items()
+    counts2 = sorted(counts2, key=lambda x: x[1], reverse = True)    
+    Sum = sum([c[1] for c in counts2])
+    S = []        
+    for i, p in enumerate(counts2):
+        S.append(abs(sum([c[1] for c in counts2[0:i]]) - sum([c[1] for c in counts2[i::]])))
+    imin = numpy.argmin(S)    
+    left = [l[0] for l in counts2[0:imin]]
+    right = [l[0] for l in counts2[imin::]]       
+    return left, right
+
+def shannonFaroTree2Dictionary(tree):
+    '''
+    Transcode tree to python 
+    '''    
+    code_words = dict()
+    level = 1    
+    if len(tree) == 2 and isinstance(tree,tuple):
+        l, r = tree
+        cl, cr = shannonFaroTree2Dictionary(l), shannonFaroTree2Dictionary(r)        
+        cout = dict()
+        for k,v in cl.iteritems():
+            cout[k] = '0'+v
+        for k,v in cr.iteritems():
+            cout[k] = '1'+v
+        return cout
+    else:
+        return {tree:''}
+
+def calucateShannonFaroTree(dc):
+    '''
+    turns a probability dictionary into an encoding tree using the given split algorithm (fast is default)
+    '''
+    tree = (None,None)
+    if len(dc) == 1:
+        return dc.keys()[0]
+    else:
+        left, right = divideShannonFanoList(dc)                
+        dl = {}; dr = {}
+        for x in left:
+            dl[x] = dc[x]
+        for x in right:
+            dr[x] = dc[x]
+        tree = (calucateShannonFaroTree(dl), calucateShannonFaroTree(dr))
+        return tree
