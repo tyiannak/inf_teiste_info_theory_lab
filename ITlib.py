@@ -95,11 +95,11 @@ def getTextCounts(text):
             counts[ch] += 1
     return counts
 
-def printTextCounts(counts, huffmanCode = None):
-    # Prints in sorted order the provided character counts and huffman code words (if provided)
+def printTextCounts(counts, code = None):
+    # Prints in sorted order the provided character counts and code words (if provided)
     # ARGUMENTS:
     #  - counts: dictionary of chars->counts
-    #  - huffmanCode: dictionary of chars->huffman code words    
+    #  - code: dictionary of chars->code words    
     Sum = float(sum(counts.values()))
     sorted_counts = sorted(counts.items(), key=operator.itemgetter(1), reverse = True)
     print sorted_counts
@@ -111,10 +111,10 @@ def printTextCounts(counts, huffmanCode = None):
             k = "\\n"        
         if key == " ":
             k = "space"    
-        if not huffmanCode:
+        if not code:
             print "%s\t%.2f%%" % (k, 100 * counts[key] / Sum)
         else:
-            print "%s\t%.2f%%\t%s" % (k, 100 * counts[key] / Sum, huffmanCode[key])
+            print "%s\t%.2f%%\t%s" % (k, 100 * counts[key] / Sum, code[key])
 
 def removeUnknownCharacters(str):
     # removes special characters from string and returns new string
@@ -168,25 +168,25 @@ def divideShannonFanoList(counts):
 
 def shannonFanoTree2Dictionary(tree):
     '''
-    Transcode tree to python 
+    Shannon-Fano coding: Transcode tree to python 
     '''    
     code_words = dict()
     level = 1    
     if len(tree) == 2 and isinstance(tree,tuple):
         l, r = tree
         cl, cr = shannonFanoTree2Dictionary(l), shannonFanoTree2Dictionary(r)        
-        cout = dict()
+        sfCode = dict()
         for k,v in cl.iteritems():
-            cout[k] = '0'+v
+            sfCode[k] = '0'+v
         for k,v in cr.iteritems():
-            cout[k] = '1'+v
-        return cout
+            sfCode[k] = '1'+v
+        return sfCode
     else:
         return {tree:''}
 
 def calucateShannonFanoTree(dc):
     '''
-    turns a probability dictionary into an encoding tree using the given split algorithm (fast is default)
+    Calculates the tree that represents the shannon fano coding, given a dictionary of symbol probabilities
     '''
     tree = (None,None)
     if len(dc) == 1:
