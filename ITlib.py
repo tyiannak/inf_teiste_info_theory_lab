@@ -95,6 +95,19 @@ def getTextCounts(text):
             counts[ch] += 1
     return counts
 
+def getTextCountsUnique(text): 
+    # Get counts of each character of a given string (message)    
+    # INPUT: text (string)
+    # RETURNS: a dictionary of chars->counts
+    # NOTE: This function uses the unique chars that appear in the input string (NOT the characters of listOfAllCharacters)
+    #
+    uListChars = list(set(text))
+    counts = dict.fromkeys(uListChars, 0)
+    for ch in text:
+        if ch in counts:
+            counts[ch] += 1
+    return counts
+
 def printTextCounts(counts, code = None):
     # Prints in sorted order the provided character counts and code words (if provided)
     # ARGUMENTS:
@@ -135,6 +148,17 @@ def encode(code, text):
     for t in text:
         eW.append(code[t])
     return eW
+
+def decode(code, text):
+    dcode = dict((v,k) for k,v in code.iteritems())        
+    buff = ""
+    dText = ""
+    for t in text:
+        buff += t                        
+        if buff in dcode:
+            dText += (dcode[buff])            
+            buff = ""
+    return dText
 
 def generateShannonFanoCode(countsChar):
     # Generate the Shanno-Fano code for the given dict mapping symbols to weights
