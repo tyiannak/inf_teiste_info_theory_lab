@@ -99,7 +99,7 @@ def getTextCountsUnique(text):
     # Get counts of each character of a given string (message)    
     # INPUT: text (string)
     # RETURNS: a dictionary of chars->counts
-    # NOTE: This function uses the unique chars that appear in the input string (NOT the characters of listOfAllCharacters)
+    # NOTE: This function uses the UNIQUE chars that appear in the input string (NOT the characters of listOfAllCharacters)
     #
     uListChars = list(set(text))
     counts = dict.fromkeys(uListChars, 0)

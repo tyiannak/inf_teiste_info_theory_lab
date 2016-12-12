@@ -8,10 +8,10 @@ sfcode, l2 = ITlib.generateShannonFanoCode(charCounts)
 
 print "\nShannon Fano Code:"
 print sfcode
-print "Length %.2f" % (l1)
+print "Length %.2f" % (l2)
 print "\nHuffman  Code:"
 print hcode
-print "Length %.2f" % (l2)
+print "Length %.2f" % (l1)
 
 
 '''
