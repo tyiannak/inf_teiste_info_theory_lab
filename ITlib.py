@@ -114,8 +114,7 @@ def printTextCounts(counts, code = None):
     #  - counts: dictionary of chars->counts
     #  - code: dictionary of chars->code words    
     Sum = float(sum(counts.values()))
-    sorted_counts = sorted(counts.items(), key=operator.itemgetter(1), reverse = True)
-    print sorted_counts
+    sorted_counts = sorted(counts.items(), key=operator.itemgetter(1), reverse = True)    
     for key, count in sorted_counts:                
         k = key
         if key == "\t":
