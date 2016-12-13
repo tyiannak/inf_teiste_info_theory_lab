@@ -153,11 +153,9 @@ def decode(code, text):
     # decodes a coded string using the provided code
     # ARGUMENTS:
     # - code : dictionary of chars->code words
-    # - text : encoded string
+    # - text : encoded string (either list of strings or a concatenated string)
     # RETURNS:
     # - dText: decoded string
-    # NOTE: The input text must be STRING. 
-    # The encode function returns a list of code words. Use "".join() to convert it to string
     dcode = dict((v,k) for k,v in code.iteritems())        
     buff = ""
     dText = ""
