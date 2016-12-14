@@ -6,6 +6,7 @@ import binascii
 import numpy
 import string
 import operator
+import math
 eps = 0.000000000001
 
 #listOfAllCharacters = string.printable[:-3]
@@ -55,7 +56,7 @@ def SNR_num_to_db(SNR_num):                                         # convert nu
     return 10 * numpy.log10(SNR_num)
 
 '''''''''''''''
-    CODING
+SOURCE  CODING
 ''''''''''''''' 
 def generateHuffmanCode(countsChar):
     # Generate the Huffman code for the given dict mapping symbols to weights
@@ -229,3 +230,15 @@ def calucateShannonFanoTree(dc):
             dr[x] = dc[x]
         tree = (calucateShannonFanoTree(dl), calucateShannonFanoTree(dr))
         return tree
+
+'''''''''''''''
+CHANNEL  CODING
+''''''''''''''' 
+def repetitionCodeError(n, Pe):
+    if (n % 2 == 0):
+        raise ValueError('N must be even in repetion codes!')
+    s = []
+    for k in range((n+1)/2,n+1):
+        comb = math.factorial(n) / float(math.factorial(k) * math.factorial(n-k))        
+        s.append(comb * Pe**k * (1-Pe)**(n-k))
+    return sum(s)
