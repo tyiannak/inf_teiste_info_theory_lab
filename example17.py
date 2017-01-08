@@ -1,7 +1,6 @@
 import ITlib, numpy
 import matplotlib.pyplot as plt
 import numpy
-#Pe = 0.001
 n1 = 3
 n2 = 5
 n3 = 7
