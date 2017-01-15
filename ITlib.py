@@ -235,10 +235,73 @@ def calucateShannonFanoTree(dc):
 CHANNEL  CODING
 ''''''''''''''' 
 def repetitionCodeError(n, Pe):
+    '''
+    Computes error probability for the simple repetition code
+    ARGUMENTS:
+     - n:       number of repetition bits
+     - Pe:      single-bit error probability
+    '''
     if (n % 2 == 0):
-        raise ValueError('N must be even in repetion codes!')
+        raise ValueError('N must be odd in repetion codes!')
     s = []
     for k in range((n+1)/2,n+1):
         comb = math.factorial(n) / float(math.factorial(k) * math.factorial(n-k))        
         s.append(comb * Pe**k * (1-Pe)**(n-k))
     return sum(s)
+
+def linearCoding_computeGH(P):
+    '''
+    Computes generator matrix, parity check  from matrix P, using the standard form:
+    G = [Ik | P]
+    H = [ -P^T | In-k]
+    ARGUMENTS:
+     - P:   matrix P of the standard form of linear codes
+    RETURNS:
+     - G:   generator matrix
+     - H:   parity check matrix
+    '''
+    I = numpy.eye(P.shape[0])
+    G = numpy.concatenate( [I, P] , axis = 1)
+    k, n = G.shape
+    H =  numpy.concatenate([P.T, numpy.eye(n-k)], axis = 1)
+    return G, H
+
+def linearCoding_encode(G, word):    
+    '''
+    Encodes a word given the generator matrix of a linear code
+    ARGUMENTS:
+     - G:       generator matrix
+     - word:    input word to be encoded
+    RETURNS:    encoded word
+    '''
+    return numpy.dot(word, G) % 2
+
+def linearCoding_syndromeCorrect(H, cword):
+    '''
+    Performs syndrome-based error correction
+    ARGUMENTS:
+     - H:       parity check matrix
+     - cword:   encoded word
+    RETURNS:    corrected encoded word    
+    '''
+    dc = numpy.dot(cword, H.T) % 2
+    print "Syndrome:",
+    print dc    
+    cword_correct = numpy.copy(cword)    
+    if sum(dc) != 0:
+        iF = (H.T.tolist()).index(dc.tolist())
+        cword_correct[iF] = (cword[iF] + 1) % 2
+        print "Error in bit %d" % iF
+    return cword_correct
+
+def linearCoding_decode(G, cword):
+    '''
+    Decodes an encoded word using a linear code
+    ARGUMENTS:
+     - G:       generator matrix
+     - word:    encoded word to be encoded
+    RETURNS:    decoded word
+    '''
+    k, n = G.shape
+    R = numpy.concatenate( [numpy.eye(k), numpy.zeros((k,n-k))] , axis = 1)
+    return numpy.dot(R , cword)

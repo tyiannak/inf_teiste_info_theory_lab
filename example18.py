@@ -1,42 +1,31 @@
-import ITlib, numpy
-import matplotlib.pyplot as plt
-import numpy
+import ITlib, numpy, itertools
 
 P = numpy.array( [ [0,1,1], [1,0,1], [1,1,0]])
-I = numpy.eye(P.shape[0])
-G = numpy.concatenate( [I, P] , axis = 1)
+
+G, H = ITlib.linearCoding_computeGH(P)                  # get generator matrix and parity check matrix
 k, n = G.shape
-
-
-print P.T
-H =  numpy.concatenate([P.T, numpy.eye(n-k)], axis = 1)
 print "n = %d, k = %d" % (n,k)
-print "G:"
-print G
-print "H:"
-print H
+print "G:"; print G
+print "H:"; print H
 
-v = numpy.array([1,0,0]) 
-print "Original word to be transmited: ",
+v = numpy.array([1,0,0])                                # initial word transmited
+print "Original word to be transmited:   ",
 print v
-c = numpy.dot(v, G) % 2
-print "Coded word to be transmited: ",
+
+c = ITlib.linearCoding_encode(G, v)                     # encoded word
+print "Coded word to be transmited:      ",
 print c
-e = numpy.zeros(c.shape)
+
+e = numpy.zeros(c.shape)                                # add error on 4th bit
 e[3] = 1
 c = (c + e) % 2
 print "Coded word received (with error): ",
 print c
 
-dc = numpy.dot(c, H.T) % 2
-print "Syndrome:",
-print dc
-if sum(dc) != 0:
-    iF = (H.T.tolist()).index(dc.tolist())
-    c[iF] = (c[iF] + 1) % 2
-    print "Error in bit %d" % iF
-    print "Corrected codeword :" ,
-    print c
-c = numpy.matrix(c)
-#print numpy.linalg.lstsq(G.T, c.T)
-#print numpy.linalg.inv(G) 
+c_corrected = ITlib.linearCoding_syndromeCorrect(H, c)  # correct with syndrome
+print "Corrected code-word: ",
+print c_corrected
+
+v2 = ITlib.linearCoding_decode(G, c_corrected)          # decode
+print "Decoded word", 
+print v2
