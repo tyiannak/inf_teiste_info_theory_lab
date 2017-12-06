@@ -1,12 +1,16 @@
+from PIL import Image
 import ITlib
 import numpy
 import os
-import cv2
 import matplotlib.pyplot as plt
 
 def computeImageEntropy(path):
-    RGB = cv2.imread(path, cv2.CV_LOAD_IMAGE_COLOR)                 # read an image from a jpg file
-    Grayscale = cv2.cvtColor(RGB, cv2.cv.CV_RGB2GRAY)               # convert to grayscale (2D)
+    Grayscale = numpy.array(Image.open(path))
+    if len(Grayscale.shape)==3:
+    	Grayscale = Grayscale.mean(axis = 2).astype('int')
+    print Grayscale.shape
+    #RGB = cv2.imread(path, cv2.CV_LOAD_IMAGE_COLOR)                 # read an image from a jpg file
+    #Grayscale = cv2.cvtColor(RGB, cv2.cv.CV_RGB2GRAY)               # convert to grayscale (2D)
     countValues = numpy.zeros((256,))                               # inialize histogram (counter for each 0..255 pixel value)
     for i in range(Grayscale.shape[0]):                             # for each row i
         for j in range(Grayscale.shape[1]):                         # for each collumn j
